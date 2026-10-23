@@ -1,0 +1,2769 @@
+{
+  "users": {
+    "usr_admin": {
+      "user_id": "usr_admin",
+      "name": "Admin Manager",
+      "email": "admin@pharmacy.com",
+      "role": "admin",
+      "password_hash": "$2b$12$ES/wXRV9uE7te3Fzn6aCtewlsZHP8/Q5AgJRz4crgnRADr.ujPj0u",
+      "created_at": "2026-06-17T16:15:30.171677"
+    },
+    "usr_pharmacist": {
+      "user_id": "usr_pharmacist",
+      "name": "Sarah Croft",
+      "email": "pharmacist@pharmacy.com",
+      "role": "pharmacist",
+      "password_hash": "$2b$12$T2eHTcY8GDXXFfNpQMHzSOm5xIsl492PbCVifF1t/2fKzI1Gw2Ax6",
+      "created_at": "2026-06-17T16:15:30.490499"
+    },
+    "usr_manager": {
+      "user_id": "usr_manager",
+      "name": "John Doe",
+      "email": "manager@pharmacy.com",
+      "role": "manager",
+      "password_hash": "$2b$12$hsCa0Ss/rtHULeVGGu.6OOet7OyW4SUc0BtaRUPX9kAB7.xDct33q",
+      "created_at": "2026-06-17T16:15:30.879522"
+    }
+  },
+  "suppliers": {
+    "sup_alembic": {
+      "supplier_id": "sup_alembic",
+      "supplier_name": "Alembic Pharmaceuticals Logistics Ltd",
+      "contact": "+91 9876543210",
+      "email": "logistics@alembic.com",
+      "address": "GIDC Estate, Vadodara, Gujarat, India"
+    },
+    "sup_glaxo": {
+      "supplier_id": "sup_glaxo",
+      "supplier_name": "GSK India Distributors",
+      "contact": "+91 9998887776",
+      "email": "distributors@gsk.in",
+      "address": "Worli, Mumbai, Maharashtra, India"
+    },
+    "sup_sanofi": {
+      "supplier_id": "sup_sanofi",
+      "supplier_name": "Sanofi India Supply Chain",
+      "contact": "+91 8887776665",
+      "email": "supplies@sanofi.com",
+      "address": "Saki Naka, Andheri, Mumbai, India"
+    },
+    "sup_glenmark": {
+      "supplier_id": "sup_glenmark",
+      "supplier_name": "Glenmark Pharma Distributors",
+      "contact": "+91 7776665554",
+      "email": "sales@glenmark.com",
+      "address": "Nashik Road, Nashik, Maharashtra, India"
+    }
+  },
+  "medicines": {
+    "med_2": {
+      "medicine_id": "med_2",
+      "name": "Azithral 500 Tablet",
+      "generic_name": "Azithromycin",
+      "category": "Antibiotic",
+      "manufacturer": "Alembic Pharmaceuticals Ltd",
+      "batch_no": "B2026-AZ76",
+      "price": 132.36,
+      "cost_price": 92.65,
+      "supplier_id": "sup_alembic",
+      "reorder_level": 500,
+      "expiry_date": "2027-03-27",
+      "created_at": "2026-06-17T16:15:32.791030"
+    },
+    "med_43": {
+      "medicine_id": "med_43",
+      "name": "Azithral 200 Liquid",
+      "generic_name": "Azithromycin",
+      "category": "Antibiotic",
+      "manufacturer": "Alembic Pharmaceuticals Ltd",
+      "batch_no": "B2026-AZ95",
+      "price": 57.25,
+      "cost_price": 40.07,
+      "supplier_id": "sup_alembic",
+      "reorder_level": 500,
+      "expiry_date": "2027-01-04",
+      "created_at": "2026-06-17T16:15:32.796036"
+    },
+    "med_1": {
+      "medicine_id": "med_1",
+      "name": "Augmentin 625 Duo Tablet",
+      "generic_name": "Amoxicillin",
+      "category": "Antibiotic",
+      "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+      "batch_no": "B2026-AM30",
+      "price": 223.42,
+      "cost_price": 156.39,
+      "supplier_id": "sup_glaxo",
+      "reorder_level": 500,
+      "expiry_date": "2027-08-11",
+      "created_at": "2026-06-17T16:15:33.400849"
+    },
+    "med_14": {
+      "medicine_id": "med_14",
+      "name": "Augmentin Duo Oral Suspension",
+      "generic_name": "Amoxicillin",
+      "category": "Antibiotic",
+      "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+      "batch_no": "B2026-AM36",
+      "price": 67.2,
+      "cost_price": 47.04,
+      "supplier_id": "sup_glaxo",
+      "reorder_level": 500,
+      "expiry_date": "2027-03-28",
+      "created_at": "2026-06-17T16:15:33.403864"
+    },
+    "med_157": {
+      "medicine_id": "med_157",
+      "name": "Amlodac 5 Tablet",
+      "generic_name": "Amlodipine",
+      "category": "Chronic",
+      "manufacturer": "Zydus Cadila",
+      "batch_no": "B2026-AM80",
+      "price": 97.1,
+      "cost_price": 67.97,
+      "supplier_id": "sup_alembic",
+      "reorder_level": 500,
+      "expiry_date": "2027-01-15",
+      "created_at": "2026-06-17T16:15:34.559482"
+    },
+    "med_501": {
+      "medicine_id": "med_501",
+      "name": "Amlodac 2.5 Tablet",
+      "generic_name": "Amlodipine",
+      "category": "Chronic",
+      "manufacturer": "Zydus Cadila",
+      "batch_no": "B2026-AM43",
+      "price": 61.59,
+      "cost_price": 43.11,
+      "supplier_id": "sup_alembic",
+      "reorder_level": 500,
+      "expiry_date": "2026-11-28",
+      "created_at": "2026-06-17T16:15:34.565485"
+    },
+    "med_94173": {
+      "medicine_id": "med_94173",
+      "name": "Glycomet 500 SR Tablet",
+      "generic_name": "Metformin",
+      "category": "Chronic",
+      "manufacturer": "USV Ltd",
+      "batch_no": "B2026-ME30",
+      "price": 47.71,
+      "cost_price": 33.4,
+      "supplier_id": "sup_sanofi",
+      "reorder_level": 500,
+      "expiry_date": "2026-12-31",
+      "created_at": "2026-06-17T16:15:35.276650"
+    },
+    "med_94174": {
+      "medicine_id": "med_94174",
+      "name": "Glycomet-GP 1 Tablet PR",
+      "generic_name": "Metformin",
+      "category": "Chronic",
+      "manufacturer": "USV Ltd",
+      "batch_no": "B2026-ME43",
+      "price": 116.5,
+      "cost_price": 81.55,
+      "supplier_id": "sup_sanofi",
+      "reorder_level": 500,
+      "expiry_date": "2026-12-09",
+      "created_at": "2026-06-17T16:15:35.283134"
+    },
+    "med_95858": {
+      "medicine_id": "med_95858",
+      "name": "Glimceed MF 2mg/500mg Tablet",
+      "generic_name": "Vitamin C",
+      "category": "Vitamin",
+      "manufacturer": "Zota Health care Ltd",
+      "batch_no": "B2026-VI95",
+      "price": 47.25,
+      "cost_price": 33.07,
+      "supplier_id": "sup_sanofi",
+      "reorder_level": 500,
+      "expiry_date": "2027-08-27",
+      "created_at": "2026-06-17T16:15:36.163565"
+    },
+    "med_7471": {
+      "medicine_id": "med_7471",
+      "name": "Aceline 200mg Tablet SR",
+      "generic_name": "Vitamin C",
+      "category": "Vitamin",
+      "manufacturer": "Shinto Organics (P) Limited",
+      "batch_no": "B2026-VI16",
+      "price": 79.0,
+      "cost_price": 55.3,
+      "supplier_id": "sup_sanofi",
+      "reorder_level": 500,
+      "expiry_date": "2026-08-10",
+      "created_at": "2026-06-17T16:15:36.168991"
+    },
+    "med_1000": {
+      "medicine_id": "med_1000",
+      "name": "Becosules Brand-1 Tablet",
+      "generic_name": "Multivitamin",
+      "category": "Vitamin",
+      "manufacturer": "Generic Indian Manufacturer Ltd",
+      "batch_no": "B2026-MU97",
+      "price": 109.0,
+      "cost_price": 76.3,
+      "supplier_id": "sup_glaxo",
+      "reorder_level": 500,
+      "expiry_date": "2027-05-29",
+      "created_at": "2026-06-17T16:15:36.921334"
+    },
+    "med_2000": {
+      "medicine_id": "med_2000",
+      "name": "Becosules Brand-2 Tablet",
+      "generic_name": "Multivitamin",
+      "category": "Vitamin",
+      "manufacturer": "Generic Indian Manufacturer Ltd",
+      "batch_no": "B2026-MU19",
+      "price": 131.0,
+      "cost_price": 91.7,
+      "supplier_id": "sup_glaxo",
+      "reorder_level": 500,
+      "expiry_date": "2027-06-16",
+      "created_at": "2026-06-17T16:15:36.927337"
+    },
+    "med_3": {
+      "medicine_id": "med_3",
+      "name": "Ascoril LS Syrup",
+      "generic_name": "Cough Syrup",
+      "category": "Cough_Cold",
+      "manufacturer": "Glenmark Pharmaceuticals Ltd",
+      "batch_no": "B2026-CO28",
+      "price": 118.0,
+      "cost_price": 82.6,
+      "supplier_id": "sup_glenmark",
+      "reorder_level": 500,
+      "expiry_date": "2027-02-09",
+      "created_at": "2026-06-17T16:15:37.886647"
+    },
+    "med_10": {
+      "medicine_id": "med_10",
+      "name": "Ascoril D Plus Syrup Sugar Free",
+      "generic_name": "Cough Syrup",
+      "category": "Cough_Cold",
+      "manufacturer": "Glenmark Pharmaceuticals Ltd",
+      "batch_no": "B2026-CO68",
+      "price": 129.0,
+      "cost_price": 90.3,
+      "supplier_id": "sup_glenmark",
+      "reorder_level": 500,
+      "expiry_date": "2027-04-25",
+      "created_at": "2026-06-17T16:15:37.892649"
+    },
+    "med_98": {
+      "medicine_id": "med_98",
+      "name": "Alerid Syrup",
+      "generic_name": "Cetirizine",
+      "category": "Cough_Cold",
+      "manufacturer": "Cipla Ltd",
+      "batch_no": "B2026-CE10",
+      "price": 21.84,
+      "cost_price": 15.29,
+      "supplier_id": "sup_glenmark",
+      "reorder_level": 500,
+      "expiry_date": "2027-02-21",
+      "created_at": "2026-06-17T16:15:38.547377"
+    },
+    "med_102": {
+      "medicine_id": "med_102",
+      "name": "Alerid Tablet",
+      "generic_name": "Cetirizine",
+      "category": "Cough_Cold",
+      "manufacturer": "Cipla Ltd",
+      "batch_no": "B2026-CE61",
+      "price": 20.48,
+      "cost_price": 14.34,
+      "supplier_id": "sup_glenmark",
+      "reorder_level": 500,
+      "expiry_date": "2027-06-04",
+      "created_at": "2026-06-17T16:15:38.553377"
+    },
+    "med_33928": {
+      "medicine_id": "med_33928",
+      "name": "Calpol 500mg Tablet",
+      "generic_name": "Paracetamol",
+      "category": "Antipyretic",
+      "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+      "batch_no": "B2026-PA39",
+      "price": 16.65,
+      "cost_price": 11.65,
+      "supplier_id": "sup_glaxo",
+      "reorder_level": 500,
+      "expiry_date": "2026-07-02",
+      "created_at": "2026-06-17T16:15:39.730182"
+    },
+    "med_33933": {
+      "medicine_id": "med_33933",
+      "name": "Calpol 650mg Tablet",
+      "generic_name": "Paracetamol",
+      "category": "Antipyretic",
+      "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+      "batch_no": "B2026-PA14",
+      "price": 34.23,
+      "cost_price": 23.96,
+      "supplier_id": "sup_glaxo",
+      "reorder_level": 500,
+      "expiry_date": "2026-07-02",
+      "created_at": "2026-06-17T16:15:39.742182"
+    },
+    "med_25739": {
+      "medicine_id": "med_25739",
+      "name": "Brufen 400 Tablet",
+      "generic_name": "Ibuprofen",
+      "category": "Antipyretic",
+      "manufacturer": "Abbott",
+      "batch_no": "B2026-IB85",
+      "price": 19.32,
+      "cost_price": 13.52,
+      "supplier_id": "sup_alembic",
+      "reorder_level": 500,
+      "expiry_date": "2027-06-06",
+      "created_at": "2026-06-17T16:15:40.691614"
+    },
+    "med_25800": {
+      "medicine_id": "med_25800",
+      "name": "Brufen 200 Tablet",
+      "generic_name": "Ibuprofen",
+      "category": "Antipyretic",
+      "manufacturer": "Abbott",
+      "batch_no": "B2026-IB20",
+      "price": 10.92,
+      "cost_price": 7.64,
+      "supplier_id": "sup_alembic",
+      "reorder_level": 500,
+      "expiry_date": "2027-09-02",
+      "created_at": "2026-06-17T16:15:40.699320"
+    }
+  },
+  "inventory": {
+    "inv_med_2": {
+      "inventory_id": "inv_med_2",
+      "medicine_id": "med_2",
+      "current_stock": 350,
+      "reserved_stock": 25,
+      "available_stock": 325,
+      "last_updated": "2026-06-17T16:15:32.791030"
+    },
+    "inv_med_43": {
+      "inventory_id": "inv_med_43",
+      "medicine_id": "med_43",
+      "current_stock": 350,
+      "reserved_stock": 20,
+      "available_stock": 330,
+      "last_updated": "2026-06-17T16:15:32.796036"
+    },
+    "inv_med_1": {
+      "inventory_id": "inv_med_1",
+      "medicine_id": "med_1",
+      "current_stock": 150,
+      "reserved_stock": 25,
+      "available_stock": 125,
+      "last_updated": "2026-06-17T16:15:33.400849"
+    },
+    "inv_med_14": {
+      "inventory_id": "inv_med_14",
+      "medicine_id": "med_14",
+      "current_stock": 150,
+      "reserved_stock": 43,
+      "available_stock": 107,
+      "last_updated": "2026-06-17T16:15:33.403864"
+    },
+    "inv_med_157": {
+      "inventory_id": "inv_med_157",
+      "medicine_id": "med_157",
+      "current_stock": 1390,
+      "reserved_stock": 41,
+      "available_stock": 1349,
+      "last_updated": "2026-06-17T16:15:34.559482"
+    },
+    "inv_med_501": {
+      "inventory_id": "inv_med_501",
+      "medicine_id": "med_501",
+      "current_stock": 934,
+      "reserved_stock": 44,
+      "available_stock": 890,
+      "last_updated": "2026-06-17T16:15:34.565485"
+    },
+    "inv_med_94173": {
+      "inventory_id": "inv_med_94173",
+      "medicine_id": "med_94173",
+      "current_stock": 854,
+      "reserved_stock": 30,
+      "available_stock": 824,
+      "last_updated": "2026-06-17T16:15:35.276650"
+    },
+    "inv_med_94174": {
+      "inventory_id": "inv_med_94174",
+      "medicine_id": "med_94174",
+      "current_stock": 620,
+      "reserved_stock": 22,
+      "available_stock": 598,
+      "last_updated": "2026-06-17T16:15:35.283134"
+    },
+    "inv_med_95858": {
+      "inventory_id": "inv_med_95858",
+      "medicine_id": "med_95858",
+      "current_stock": 8500,
+      "reserved_stock": 22,
+      "available_stock": 8478,
+      "last_updated": "2026-06-17T16:15:36.163565"
+    },
+    "inv_med_7471": {
+      "inventory_id": "inv_med_7471",
+      "medicine_id": "med_7471",
+      "current_stock": 8500,
+      "reserved_stock": 44,
+      "available_stock": 8456,
+      "last_updated": "2026-06-17T16:15:36.168991"
+    },
+    "inv_med_1000": {
+      "inventory_id": "inv_med_1000",
+      "medicine_id": "med_1000",
+      "current_stock": 620,
+      "reserved_stock": 40,
+      "available_stock": 580,
+      "last_updated": "2026-06-17T16:15:36.921334"
+    },
+    "inv_med_2000": {
+      "inventory_id": "inv_med_2000",
+      "medicine_id": "med_2000",
+      "current_stock": 767,
+      "reserved_stock": 16,
+      "available_stock": 751,
+      "last_updated": "2026-06-17T16:15:36.927337"
+    },
+    "inv_med_3": {
+      "inventory_id": "inv_med_3",
+      "medicine_id": "med_3",
+      "current_stock": 969,
+      "reserved_stock": 42,
+      "available_stock": 927,
+      "last_updated": "2026-06-17T16:15:37.886647"
+    },
+    "inv_med_10": {
+      "inventory_id": "inv_med_10",
+      "medicine_id": "med_10",
+      "current_stock": 1473,
+      "reserved_stock": 14,
+      "available_stock": 1459,
+      "last_updated": "2026-06-17T16:15:37.892649"
+    },
+    "inv_med_98": {
+      "inventory_id": "inv_med_98",
+      "medicine_id": "med_98",
+      "current_stock": 1040,
+      "reserved_stock": 11,
+      "available_stock": 1029,
+      "last_updated": "2026-06-17T16:15:38.547377"
+    },
+    "inv_med_102": {
+      "inventory_id": "inv_med_102",
+      "medicine_id": "med_102",
+      "current_stock": 701,
+      "reserved_stock": 13,
+      "available_stock": 688,
+      "last_updated": "2026-06-17T16:15:38.553377"
+    },
+    "inv_med_33928": {
+      "inventory_id": "inv_med_33928",
+      "medicine_id": "med_33928",
+      "current_stock": 1467,
+      "reserved_stock": 40,
+      "available_stock": 1427,
+      "last_updated": "2026-06-17T16:15:39.730182"
+    },
+    "inv_med_33933": {
+      "inventory_id": "inv_med_33933",
+      "medicine_id": "med_33933",
+      "current_stock": 832,
+      "reserved_stock": 50,
+      "available_stock": 782,
+      "last_updated": "2026-06-17T16:15:39.742182"
+    },
+    "inv_med_25739": {
+      "inventory_id": "inv_med_25739",
+      "medicine_id": "med_25739",
+      "current_stock": 1023,
+      "reserved_stock": 26,
+      "available_stock": 997,
+      "last_updated": "2026-06-17T16:15:40.691614"
+    },
+    "inv_med_25800": {
+      "inventory_id": "inv_med_25800",
+      "medicine_id": "med_25800",
+      "current_stock": 953,
+      "reserved_stock": 50,
+      "available_stock": 903,
+      "last_updated": "2026-06-17T16:15:40.699320"
+    }
+  },
+  "sales": {
+    "sale_3ab8777c": {
+      "sale_id": "sale_3ab8777c",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 17,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 2250.12
+    },
+    "sale_f019a119": {
+      "sale_id": "sale_f019a119",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 23,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 3044.28
+    },
+    "sale_6a0db87d": {
+      "sale_id": "sale_6a0db87d",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 32,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 4235.52
+    },
+    "sale_36f38268": {
+      "sale_id": "sale_36f38268",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 21,
+      "sale_date": "2026-05-21 16:15:40",
+      "revenue": 2779.56
+    },
+    "sale_485468bc": {
+      "sale_id": "sale_485468bc",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 27,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 3573.72
+    },
+    "sale_dffeae45": {
+      "sale_id": "sale_dffeae45",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 38,
+      "sale_date": "2026-05-21 16:15:40",
+      "revenue": 5029.68
+    },
+    "sale_cf43a4a7": {
+      "sale_id": "sale_cf43a4a7",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 31,
+      "sale_date": "2026-06-12 16:15:40",
+      "revenue": 4103.16
+    },
+    "sale_f2791adc": {
+      "sale_id": "sale_f2791adc",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 15,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 1985.4
+    },
+    "sale_4a9bbcdc": {
+      "sale_id": "sale_4a9bbcdc",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 36,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 4764.96
+    },
+    "sale_33a051df": {
+      "sale_id": "sale_33a051df",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 24,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 3176.64
+    },
+    "sale_7a88e9f3": {
+      "sale_id": "sale_7a88e9f3",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "quantity": 5,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 661.8
+    },
+    "sale_690de2ba": {
+      "sale_id": "sale_690de2ba",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 34,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 1946.5
+    },
+    "sale_8f52594d": {
+      "sale_id": "sale_8f52594d",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 30,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 1717.5
+    },
+    "sale_ce77ce53": {
+      "sale_id": "sale_ce77ce53",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 28,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 1603.0
+    },
+    "sale_4cb1464f": {
+      "sale_id": "sale_4cb1464f",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 21,
+      "sale_date": "2026-05-22 16:15:40",
+      "revenue": 1202.25
+    },
+    "sale_6a6c0ae6": {
+      "sale_id": "sale_6a6c0ae6",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 35,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 2003.75
+    },
+    "sale_3ce25c33": {
+      "sale_id": "sale_3ce25c33",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 29,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 1660.25
+    },
+    "sale_64196815": {
+      "sale_id": "sale_64196815",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 27,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 1545.75
+    },
+    "sale_5823fea6": {
+      "sale_id": "sale_5823fea6",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 17,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 973.25
+    },
+    "sale_992678d9": {
+      "sale_id": "sale_992678d9",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "quantity": 17,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 973.25
+    },
+    "sale_34df192f": {
+      "sale_id": "sale_34df192f",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 17,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 3798.14
+    },
+    "sale_c46c0cb0": {
+      "sale_id": "sale_c46c0cb0",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 25,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 5585.5
+    },
+    "sale_d257fd48": {
+      "sale_id": "sale_d257fd48",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 14,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 3127.88
+    },
+    "sale_4f230f31": {
+      "sale_id": "sale_4f230f31",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 23,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 5138.66
+    },
+    "sale_7a82f683": {
+      "sale_id": "sale_7a82f683",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 32,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 7149.44
+    },
+    "sale_b6bd0bde": {
+      "sale_id": "sale_b6bd0bde",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 6,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 1340.52
+    },
+    "sale_91afb3cb": {
+      "sale_id": "sale_91afb3cb",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 32,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 7149.44
+    },
+    "sale_151f3493": {
+      "sale_id": "sale_151f3493",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 39,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 8713.38
+    },
+    "sale_842ed73d": {
+      "sale_id": "sale_842ed73d",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 8,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 1787.36
+    },
+    "sale_5b3448f0": {
+      "sale_id": "sale_5b3448f0",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "quantity": 38,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 8489.96
+    },
+    "sale_e06c95dd": {
+      "sale_id": "sale_e06c95dd",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 10,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 672.0
+    },
+    "sale_f23d0329": {
+      "sale_id": "sale_f23d0329",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 22,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 1478.4
+    },
+    "sale_85406339": {
+      "sale_id": "sale_85406339",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 32,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 2150.4
+    },
+    "sale_d2148f74": {
+      "sale_id": "sale_d2148f74",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 19,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 1276.8
+    },
+    "sale_b7c12d0b": {
+      "sale_id": "sale_b7c12d0b",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 26,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 1747.2
+    },
+    "sale_ca8e67f5": {
+      "sale_id": "sale_ca8e67f5",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 15,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 1008.0
+    },
+    "sale_a33ca93e": {
+      "sale_id": "sale_a33ca93e",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 7,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 470.4
+    },
+    "sale_4982a594": {
+      "sale_id": "sale_4982a594",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 15,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 1008.0
+    },
+    "sale_72e335a9": {
+      "sale_id": "sale_72e335a9",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "quantity": 37,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 2486.4
+    },
+    "sale_0a3603ef": {
+      "sale_id": "sale_0a3603ef",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 24,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 2330.4
+    },
+    "sale_e52ae2cd": {
+      "sale_id": "sale_e52ae2cd",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 39,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 3786.9
+    },
+    "sale_0811c1ba": {
+      "sale_id": "sale_0811c1ba",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 14,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 1359.4
+    },
+    "sale_ca314abe": {
+      "sale_id": "sale_ca314abe",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 38,
+      "sale_date": "2026-05-22 16:15:40",
+      "revenue": 3689.8
+    },
+    "sale_de5617f3": {
+      "sale_id": "sale_de5617f3",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 19,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 1844.9
+    },
+    "sale_2cbabe63": {
+      "sale_id": "sale_2cbabe63",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 21,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 2039.1
+    },
+    "sale_6f97243e": {
+      "sale_id": "sale_6f97243e",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 7,
+      "sale_date": "2026-06-11 16:15:40",
+      "revenue": 679.7
+    },
+    "sale_558f7a1f": {
+      "sale_id": "sale_558f7a1f",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 30,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 2913.0
+    },
+    "sale_73a46e0b": {
+      "sale_id": "sale_73a46e0b",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 28,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 2718.8
+    },
+    "sale_c40941c1": {
+      "sale_id": "sale_c40941c1",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 38,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 3689.8
+    },
+    "sale_140d4fce": {
+      "sale_id": "sale_140d4fce",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 30,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 2913.0
+    },
+    "sale_5661cb64": {
+      "sale_id": "sale_5661cb64",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 31,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 3010.1
+    },
+    "sale_3c3a1900": {
+      "sale_id": "sale_3c3a1900",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 16,
+      "sale_date": "2026-06-12 16:15:40",
+      "revenue": 1553.6
+    },
+    "sale_6f5e9f27": {
+      "sale_id": "sale_6f5e9f27",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "quantity": 9,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 873.9
+    },
+    "sale_8fb2521f": {
+      "sale_id": "sale_8fb2521f",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 20,
+      "sale_date": "2026-05-23 16:15:40",
+      "revenue": 1231.8
+    },
+    "sale_a3cc9aaf": {
+      "sale_id": "sale_a3cc9aaf",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 7,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 431.13
+    },
+    "sale_fb9243d6": {
+      "sale_id": "sale_fb9243d6",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 35,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 2155.65
+    },
+    "sale_ae50be10": {
+      "sale_id": "sale_ae50be10",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 24,
+      "sale_date": "2026-06-15 16:15:40",
+      "revenue": 1478.16
+    },
+    "sale_4de6aaf8": {
+      "sale_id": "sale_4de6aaf8",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 25,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 1539.75
+    },
+    "sale_adc1c8e1": {
+      "sale_id": "sale_adc1c8e1",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 28,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 1724.52
+    },
+    "sale_f66512e9": {
+      "sale_id": "sale_f66512e9",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 33,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 2032.47
+    },
+    "sale_a15e463a": {
+      "sale_id": "sale_a15e463a",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 28,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 1724.52
+    },
+    "sale_47044006": {
+      "sale_id": "sale_47044006",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 27,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 1662.93
+    },
+    "sale_73462322": {
+      "sale_id": "sale_73462322",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 14,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 862.26
+    },
+    "sale_22b414dd": {
+      "sale_id": "sale_22b414dd",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 37,
+      "sale_date": "2026-06-15 16:15:40",
+      "revenue": 2278.83
+    },
+    "sale_21ef5030": {
+      "sale_id": "sale_21ef5030",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 32,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 1970.88
+    },
+    "sale_dfac9f30": {
+      "sale_id": "sale_dfac9f30",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 22,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 1354.98
+    },
+    "sale_5b65ef62": {
+      "sale_id": "sale_5b65ef62",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "quantity": 14,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 862.26
+    },
+    "sale_2714c10d": {
+      "sale_id": "sale_2714c10d",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 28,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 1335.88
+    },
+    "sale_d2f31288": {
+      "sale_id": "sale_d2f31288",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 35,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 1669.85
+    },
+    "sale_77e19277": {
+      "sale_id": "sale_77e19277",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 40,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 1908.4
+    },
+    "sale_237f9714": {
+      "sale_id": "sale_237f9714",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 18,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 858.78
+    },
+    "sale_9efa7b54": {
+      "sale_id": "sale_9efa7b54",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 6,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 286.26
+    },
+    "sale_9ce6c0b0": {
+      "sale_id": "sale_9ce6c0b0",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 20,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 954.2
+    },
+    "sale_c1007657": {
+      "sale_id": "sale_c1007657",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 25,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 1192.75
+    },
+    "sale_6244b67e": {
+      "sale_id": "sale_6244b67e",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 27,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 1288.17
+    },
+    "sale_b0edc694": {
+      "sale_id": "sale_b0edc694",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 19,
+      "sale_date": "2026-06-15 16:15:40",
+      "revenue": 906.49
+    },
+    "sale_c574a384": {
+      "sale_id": "sale_c574a384",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 36,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 1717.56
+    },
+    "sale_2bba0615": {
+      "sale_id": "sale_2bba0615",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 5,
+      "sale_date": "2026-06-11 16:15:40",
+      "revenue": 238.55
+    },
+    "sale_385d0c2f": {
+      "sale_id": "sale_385d0c2f",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 18,
+      "sale_date": "2026-06-15 16:15:40",
+      "revenue": 858.78
+    },
+    "sale_57fc58b7": {
+      "sale_id": "sale_57fc58b7",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 39,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 1860.69
+    },
+    "sale_2661e08c": {
+      "sale_id": "sale_2661e08c",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 17,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 811.07
+    },
+    "sale_30c4bacf": {
+      "sale_id": "sale_30c4bacf",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "quantity": 16,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 763.36
+    },
+    "sale_faf3e8fe": {
+      "sale_id": "sale_faf3e8fe",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 21,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 2446.5
+    },
+    "sale_72e47547": {
+      "sale_id": "sale_72e47547",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 36,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 4194.0
+    },
+    "sale_5dc289be": {
+      "sale_id": "sale_5dc289be",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 29,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 3378.5
+    },
+    "sale_8145af03": {
+      "sale_id": "sale_8145af03",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 19,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 2213.5
+    },
+    "sale_9042fa1c": {
+      "sale_id": "sale_9042fa1c",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 34,
+      "sale_date": "2026-06-13 16:15:40",
+      "revenue": 3961.0
+    },
+    "sale_e5ed9951": {
+      "sale_id": "sale_e5ed9951",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 11,
+      "sale_date": "2026-05-22 16:15:40",
+      "revenue": 1281.5
+    },
+    "sale_16bdca6b": {
+      "sale_id": "sale_16bdca6b",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 27,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 3145.5
+    },
+    "sale_c5efde15": {
+      "sale_id": "sale_c5efde15",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "quantity": 39,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 4543.5
+    },
+    "sale_1b393351": {
+      "sale_id": "sale_1b393351",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 17,
+      "sale_date": "2026-06-07 16:15:40",
+      "revenue": 803.25
+    },
+    "sale_37191f4d": {
+      "sale_id": "sale_37191f4d",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 32,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 1512.0
+    },
+    "sale_2e48ecf7": {
+      "sale_id": "sale_2e48ecf7",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 5,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 236.25
+    },
+    "sale_590fb36a": {
+      "sale_id": "sale_590fb36a",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 23,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 1086.75
+    },
+    "sale_be1789e6": {
+      "sale_id": "sale_be1789e6",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 36,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 1701.0
+    },
+    "sale_68d1bf3f": {
+      "sale_id": "sale_68d1bf3f",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 28,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 1323.0
+    },
+    "sale_f2626776": {
+      "sale_id": "sale_f2626776",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 13,
+      "sale_date": "2026-05-22 16:15:40",
+      "revenue": 614.25
+    },
+    "sale_62a735a1": {
+      "sale_id": "sale_62a735a1",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 7,
+      "sale_date": "2026-06-07 16:15:40",
+      "revenue": 330.75
+    },
+    "sale_6ffb14a4": {
+      "sale_id": "sale_6ffb14a4",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 21,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 992.25
+    },
+    "sale_ca69e4a2": {
+      "sale_id": "sale_ca69e4a2",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 33,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 1559.25
+    },
+    "sale_b63d4087": {
+      "sale_id": "sale_b63d4087",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 32,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 1512.0
+    },
+    "sale_1222425b": {
+      "sale_id": "sale_1222425b",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 13,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 614.25
+    },
+    "sale_e79cf16a": {
+      "sale_id": "sale_e79cf16a",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 21,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 992.25
+    },
+    "sale_597196dc": {
+      "sale_id": "sale_597196dc",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "quantity": 15,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 708.75
+    },
+    "sale_4bedc987": {
+      "sale_id": "sale_4bedc987",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 9,
+      "sale_date": "2026-06-11 16:15:40",
+      "revenue": 711.0
+    },
+    "sale_3e1b326b": {
+      "sale_id": "sale_3e1b326b",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 40,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 3160.0
+    },
+    "sale_73081ae8": {
+      "sale_id": "sale_73081ae8",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 19,
+      "sale_date": "2026-05-23 16:15:40",
+      "revenue": 1501.0
+    },
+    "sale_31d52aa2": {
+      "sale_id": "sale_31d52aa2",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 40,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 3160.0
+    },
+    "sale_e2e5ed82": {
+      "sale_id": "sale_e2e5ed82",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 5,
+      "sale_date": "2026-06-07 16:15:40",
+      "revenue": 395.0
+    },
+    "sale_b3df38a8": {
+      "sale_id": "sale_b3df38a8",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 34,
+      "sale_date": "2026-06-07 16:15:40",
+      "revenue": 2686.0
+    },
+    "sale_c1da24aa": {
+      "sale_id": "sale_c1da24aa",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 20,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 1580.0
+    },
+    "sale_f693a97a": {
+      "sale_id": "sale_f693a97a",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 29,
+      "sale_date": "2026-05-23 16:15:40",
+      "revenue": 2291.0
+    },
+    "sale_417729f2": {
+      "sale_id": "sale_417729f2",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 6,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 474.0
+    },
+    "sale_b0fca46d": {
+      "sale_id": "sale_b0fca46d",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 11,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 869.0
+    },
+    "sale_233dd920": {
+      "sale_id": "sale_233dd920",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 21,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 1659.0
+    },
+    "sale_0f5ac8ca": {
+      "sale_id": "sale_0f5ac8ca",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 5,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 395.0
+    },
+    "sale_abec4406": {
+      "sale_id": "sale_abec4406",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 7,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 553.0
+    },
+    "sale_a1d0a74d": {
+      "sale_id": "sale_a1d0a74d",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "quantity": 39,
+      "sale_date": "2026-05-21 16:15:40",
+      "revenue": 3081.0
+    },
+    "sale_79f456e4": {
+      "sale_id": "sale_79f456e4",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 35,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 3815.0
+    },
+    "sale_e718779e": {
+      "sale_id": "sale_e718779e",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 40,
+      "sale_date": "2026-06-12 16:15:40",
+      "revenue": 4360.0
+    },
+    "sale_253c9b98": {
+      "sale_id": "sale_253c9b98",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 33,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 3597.0
+    },
+    "sale_ca34c440": {
+      "sale_id": "sale_ca34c440",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 11,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 1199.0
+    },
+    "sale_4da59f2a": {
+      "sale_id": "sale_4da59f2a",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 8,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 872.0
+    },
+    "sale_829172fe": {
+      "sale_id": "sale_829172fe",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 19,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 2071.0
+    },
+    "sale_1e86a90a": {
+      "sale_id": "sale_1e86a90a",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 37,
+      "sale_date": "2026-06-11 16:15:40",
+      "revenue": 4033.0
+    },
+    "sale_8580e4f1": {
+      "sale_id": "sale_8580e4f1",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 26,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 2834.0
+    },
+    "sale_f251c06b": {
+      "sale_id": "sale_f251c06b",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 26,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 2834.0
+    },
+    "sale_84a7663a": {
+      "sale_id": "sale_84a7663a",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 6,
+      "sale_date": "2026-05-23 16:15:40",
+      "revenue": 654.0
+    },
+    "sale_3695ea59": {
+      "sale_id": "sale_3695ea59",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 22,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 2398.0
+    },
+    "sale_94f04fb3": {
+      "sale_id": "sale_94f04fb3",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "quantity": 9,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 981.0
+    },
+    "sale_9458d3fb": {
+      "sale_id": "sale_9458d3fb",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 39,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 5109.0
+    },
+    "sale_fe285e78": {
+      "sale_id": "sale_fe285e78",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 29,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 3799.0
+    },
+    "sale_57a50d1d": {
+      "sale_id": "sale_57a50d1d",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 25,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 3275.0
+    },
+    "sale_554f722e": {
+      "sale_id": "sale_554f722e",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 40,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 5240.0
+    },
+    "sale_eb4dbc5d": {
+      "sale_id": "sale_eb4dbc5d",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 40,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 5240.0
+    },
+    "sale_786d049d": {
+      "sale_id": "sale_786d049d",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 37,
+      "sale_date": "2026-05-21 16:15:40",
+      "revenue": 4847.0
+    },
+    "sale_3245d1a1": {
+      "sale_id": "sale_3245d1a1",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 12,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 1572.0
+    },
+    "sale_e1622d95": {
+      "sale_id": "sale_e1622d95",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 9,
+      "sale_date": "2026-06-11 16:15:40",
+      "revenue": 1179.0
+    },
+    "sale_c3335ec1": {
+      "sale_id": "sale_c3335ec1",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "quantity": 36,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 4716.0
+    },
+    "sale_17999d3b": {
+      "sale_id": "sale_17999d3b",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 22,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 2596.0
+    },
+    "sale_0e0171d7": {
+      "sale_id": "sale_0e0171d7",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 17,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 2006.0
+    },
+    "sale_46719842": {
+      "sale_id": "sale_46719842",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 33,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 3894.0
+    },
+    "sale_535f46a3": {
+      "sale_id": "sale_535f46a3",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 30,
+      "sale_date": "2026-06-15 16:15:40",
+      "revenue": 3540.0
+    },
+    "sale_ada5fa7a": {
+      "sale_id": "sale_ada5fa7a",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 23,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 2714.0
+    },
+    "sale_bc778c07": {
+      "sale_id": "sale_bc778c07",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 39,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 4602.0
+    },
+    "sale_85cbd379": {
+      "sale_id": "sale_85cbd379",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 17,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 2006.0
+    },
+    "sale_ae91c041": {
+      "sale_id": "sale_ae91c041",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 27,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 3186.0
+    },
+    "sale_c00798e5": {
+      "sale_id": "sale_c00798e5",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 7,
+      "sale_date": "2026-06-13 16:15:40",
+      "revenue": 826.0
+    },
+    "sale_ae186622": {
+      "sale_id": "sale_ae186622",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 30,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 3540.0
+    },
+    "sale_0d3c1234": {
+      "sale_id": "sale_0d3c1234",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 23,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 2714.0
+    },
+    "sale_45e3808c": {
+      "sale_id": "sale_45e3808c",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 30,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 3540.0
+    },
+    "sale_328f4c88": {
+      "sale_id": "sale_328f4c88",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 18,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 2124.0
+    },
+    "sale_eb5e9327": {
+      "sale_id": "sale_eb5e9327",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 17,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 2006.0
+    },
+    "sale_fe17c3cb": {
+      "sale_id": "sale_fe17c3cb",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "quantity": 11,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 1298.0
+    },
+    "sale_65c7064e": {
+      "sale_id": "sale_65c7064e",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 21,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 2709.0
+    },
+    "sale_699fe845": {
+      "sale_id": "sale_699fe845",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 25,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 3225.0
+    },
+    "sale_d94b3cfa": {
+      "sale_id": "sale_d94b3cfa",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 8,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 1032.0
+    },
+    "sale_5e012d56": {
+      "sale_id": "sale_5e012d56",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 5,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 645.0
+    },
+    "sale_91168c2b": {
+      "sale_id": "sale_91168c2b",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 29,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 3741.0
+    },
+    "sale_a1209aab": {
+      "sale_id": "sale_a1209aab",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 14,
+      "sale_date": "2026-06-17 16:15:40",
+      "revenue": 1806.0
+    },
+    "sale_c43198ce": {
+      "sale_id": "sale_c43198ce",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 24,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 3096.0
+    },
+    "sale_b63be866": {
+      "sale_id": "sale_b63be866",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "quantity": 16,
+      "sale_date": "2026-05-22 16:15:40",
+      "revenue": 2064.0
+    },
+    "sale_95caa284": {
+      "sale_id": "sale_95caa284",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 26,
+      "sale_date": "2026-06-01 16:15:40",
+      "revenue": 567.84
+    },
+    "sale_6b7fd2d9": {
+      "sale_id": "sale_6b7fd2d9",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 28,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 611.52
+    },
+    "sale_66132d3f": {
+      "sale_id": "sale_66132d3f",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 6,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 131.04
+    },
+    "sale_81c4b412": {
+      "sale_id": "sale_81c4b412",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 38,
+      "sale_date": "2026-06-15 16:15:40",
+      "revenue": 829.92
+    },
+    "sale_cab34eef": {
+      "sale_id": "sale_cab34eef",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 38,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 829.92
+    },
+    "sale_aed0e5e2": {
+      "sale_id": "sale_aed0e5e2",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 17,
+      "sale_date": "2026-06-09 16:15:40",
+      "revenue": 371.28
+    },
+    "sale_ed0435e9": {
+      "sale_id": "sale_ed0435e9",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 18,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 393.12
+    },
+    "sale_eb596370": {
+      "sale_id": "sale_eb596370",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 23,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 502.32
+    },
+    "sale_08e484e5": {
+      "sale_id": "sale_08e484e5",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 14,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 305.76
+    },
+    "sale_6d3ce736": {
+      "sale_id": "sale_6d3ce736",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 28,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 611.52
+    },
+    "sale_69d6677d": {
+      "sale_id": "sale_69d6677d",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "quantity": 13,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 283.92
+    },
+    "sale_50dfb38f": {
+      "sale_id": "sale_50dfb38f",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 37,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 757.76
+    },
+    "sale_f76a3da1": {
+      "sale_id": "sale_f76a3da1",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 35,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 716.8
+    },
+    "sale_37638f0b": {
+      "sale_id": "sale_37638f0b",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 15,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 307.2
+    },
+    "sale_9c45e3f7": {
+      "sale_id": "sale_9c45e3f7",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 14,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 286.72
+    },
+    "sale_f04f4872": {
+      "sale_id": "sale_f04f4872",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 22,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 450.56
+    },
+    "sale_ac7913b3": {
+      "sale_id": "sale_ac7913b3",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 29,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 593.92
+    },
+    "sale_aaa47f74": {
+      "sale_id": "sale_aaa47f74",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 13,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 266.24
+    },
+    "sale_b647ec2b": {
+      "sale_id": "sale_b647ec2b",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "quantity": 26,
+      "sale_date": "2026-06-12 16:15:40",
+      "revenue": 532.48
+    },
+    "sale_d0fe0d2e": {
+      "sale_id": "sale_d0fe0d2e",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 19,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 316.35
+    },
+    "sale_0795bdeb": {
+      "sale_id": "sale_0795bdeb",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 33,
+      "sale_date": "2026-05-23 16:15:40",
+      "revenue": 549.45
+    },
+    "sale_e7c877e3": {
+      "sale_id": "sale_e7c877e3",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 40,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 666.0
+    },
+    "sale_e6f3ff97": {
+      "sale_id": "sale_e6f3ff97",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 35,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 582.75
+    },
+    "sale_192295aa": {
+      "sale_id": "sale_192295aa",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 39,
+      "sale_date": "2026-06-07 16:15:40",
+      "revenue": 649.35
+    },
+    "sale_719d0307": {
+      "sale_id": "sale_719d0307",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 21,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 349.65
+    },
+    "sale_fd8b921e": {
+      "sale_id": "sale_fd8b921e",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 36,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 599.4
+    },
+    "sale_b127ebe7": {
+      "sale_id": "sale_b127ebe7",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 9,
+      "sale_date": "2026-05-23 16:15:40",
+      "revenue": 149.85
+    },
+    "sale_c41c243d": {
+      "sale_id": "sale_c41c243d",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 299.7
+    },
+    "sale_548bef59": {
+      "sale_id": "sale_548bef59",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 35,
+      "sale_date": "2026-05-31 16:15:40",
+      "revenue": 582.75
+    },
+    "sale_524cf49c": {
+      "sale_id": "sale_524cf49c",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-05-26 16:15:40",
+      "revenue": 616.14
+    },
+    "sale_71ff7080": {
+      "sale_id": "sale_71ff7080",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-06-11 16:15:40",
+      "revenue": 616.14
+    },
+    "sale_4eaace57": {
+      "sale_id": "sale_4eaace57",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 24,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 821.52
+    },
+    "sale_b32ce2b4": {
+      "sale_id": "sale_b32ce2b4",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 40,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 1369.2
+    },
+    "sale_8a302cad": {
+      "sale_id": "sale_8a302cad",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 17,
+      "sale_date": "2026-06-05 16:15:40",
+      "revenue": 581.91
+    },
+    "sale_34622650": {
+      "sale_id": "sale_34622650",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 30,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 1026.9
+    },
+    "sale_84e631f0": {
+      "sale_id": "sale_84e631f0",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 20,
+      "sale_date": "2026-06-07 16:15:40",
+      "revenue": 684.6
+    },
+    "sale_938a7986": {
+      "sale_id": "sale_938a7986",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-06-10 16:15:40",
+      "revenue": 616.14
+    },
+    "sale_7b3e8cac": {
+      "sale_id": "sale_7b3e8cac",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 15,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 513.45
+    },
+    "sale_cdc485d4": {
+      "sale_id": "sale_cdc485d4",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 38,
+      "sale_date": "2026-05-18 16:15:40",
+      "revenue": 1300.74
+    },
+    "sale_16cb750c": {
+      "sale_id": "sale_16cb750c",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-05-25 16:15:40",
+      "revenue": 616.14
+    },
+    "sale_bf66f971": {
+      "sale_id": "sale_bf66f971",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "quantity": 17,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 581.91
+    },
+    "sale_c2096850": {
+      "sale_id": "sale_c2096850",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 36,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 695.52
+    },
+    "sale_21167d91": {
+      "sale_id": "sale_21167d91",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 22,
+      "sale_date": "2026-06-03 16:15:40",
+      "revenue": 425.04
+    },
+    "sale_4536c1ec": {
+      "sale_id": "sale_4536c1ec",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-05-28 16:15:40",
+      "revenue": 347.76
+    },
+    "sale_968c9fd1": {
+      "sale_id": "sale_968c9fd1",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 25,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 483.0
+    },
+    "sale_0330b7d0": {
+      "sale_id": "sale_0330b7d0",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 40,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 772.8
+    },
+    "sale_9f42960d": {
+      "sale_id": "sale_9f42960d",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 29,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 560.28
+    },
+    "sale_4225c7e2": {
+      "sale_id": "sale_4225c7e2",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 28,
+      "sale_date": "2026-06-08 16:15:40",
+      "revenue": 540.96
+    },
+    "sale_b65cab78": {
+      "sale_id": "sale_b65cab78",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 7,
+      "sale_date": "2026-05-21 16:15:40",
+      "revenue": 135.24
+    },
+    "sale_5f7c57d3": {
+      "sale_id": "sale_5f7c57d3",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 14,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 270.48
+    },
+    "sale_69e24f0e": {
+      "sale_id": "sale_69e24f0e",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 36,
+      "sale_date": "2026-06-06 16:15:40",
+      "revenue": 695.52
+    },
+    "sale_5d9fdde1": {
+      "sale_id": "sale_5d9fdde1",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 31,
+      "sale_date": "2026-05-24 16:15:40",
+      "revenue": 598.92
+    },
+    "sale_4954d45b": {
+      "sale_id": "sale_4954d45b",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 32,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 618.24
+    },
+    "sale_4f95f4f6": {
+      "sale_id": "sale_4f95f4f6",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 18,
+      "sale_date": "2026-06-04 16:15:40",
+      "revenue": 347.76
+    },
+    "sale_ea344168": {
+      "sale_id": "sale_ea344168",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 7,
+      "sale_date": "2026-06-02 16:15:40",
+      "revenue": 135.24
+    },
+    "sale_6686e2a0": {
+      "sale_id": "sale_6686e2a0",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "quantity": 40,
+      "sale_date": "2026-05-20 16:15:40",
+      "revenue": 772.8
+    },
+    "sale_3e787cfd": {
+      "sale_id": "sale_3e787cfd",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 10,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 109.2
+    },
+    "sale_c8a8963f": {
+      "sale_id": "sale_c8a8963f",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 27,
+      "sale_date": "2026-05-29 16:15:40",
+      "revenue": 294.84
+    },
+    "sale_bba9cabf": {
+      "sale_id": "sale_bba9cabf",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 7,
+      "sale_date": "2026-06-14 16:15:40",
+      "revenue": 76.44
+    },
+    "sale_0992f04c": {
+      "sale_id": "sale_0992f04c",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 27,
+      "sale_date": "2026-05-27 16:15:40",
+      "revenue": 294.84
+    },
+    "sale_02294016": {
+      "sale_id": "sale_02294016",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 33,
+      "sale_date": "2026-06-16 16:15:40",
+      "revenue": 360.36
+    },
+    "sale_5fe07fcf": {
+      "sale_id": "sale_5fe07fcf",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 23,
+      "sale_date": "2026-05-22 16:15:40",
+      "revenue": 251.16
+    },
+    "sale_5f7d12f4": {
+      "sale_id": "sale_5f7d12f4",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 24,
+      "sale_date": "2026-05-30 16:15:40",
+      "revenue": 262.08
+    },
+    "sale_3b29e2d8": {
+      "sale_id": "sale_3b29e2d8",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "quantity": 20,
+      "sale_date": "2026-05-19 16:15:40",
+      "revenue": 218.4
+    }
+  },
+  "audit_logs": {
+    "audit_1": {
+      "log_id": "audit_1",
+      "action": "Database Initialization",
+      "user": "admin@pharmacy.com",
+      "timestamp": "2026-06-17T16:05:42.664079",
+      "details": "Database seeded with default users, suppliers, medicines, and inventory records."
+    }
+  },
+  "forecasts": {
+    "forc_med_2": {
+      "forecast_id": "forc_med_2",
+      "medicine_id": "med_2",
+      "medicine_name": "Azithral 500 Tablet",
+      "category": "Antibiotic",
+      "predicted_demand": 83636,
+      "recommended_reorder": 100013,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16727
+    },
+    "forc_med_43": {
+      "forecast_id": "forc_med_43",
+      "medicine_id": "med_43",
+      "medicine_name": "Azithral 200 Liquid",
+      "category": "Antibiotic",
+      "predicted_demand": 83636,
+      "recommended_reorder": 100013,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16727
+    },
+    "forc_med_1": {
+      "forecast_id": "forc_med_1",
+      "medicine_id": "med_1",
+      "medicine_name": "Augmentin 625 Duo Tablet",
+      "category": "Antibiotic",
+      "predicted_demand": 83475,
+      "recommended_reorder": 100020,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16695
+    },
+    "forc_med_14": {
+      "forecast_id": "forc_med_14",
+      "medicine_id": "med_14",
+      "medicine_name": "Augmentin Duo Oral Suspension",
+      "category": "Antibiotic",
+      "predicted_demand": 83475,
+      "recommended_reorder": 100020,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16695
+    },
+    "forc_med_157": {
+      "forecast_id": "forc_med_157",
+      "medicine_id": "med_157",
+      "medicine_name": "Amlodac 5 Tablet",
+      "category": "Chronic",
+      "predicted_demand": 82212,
+      "recommended_reorder": 97264,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16442
+    },
+    "forc_med_501": {
+      "forecast_id": "forc_med_501",
+      "medicine_id": "med_501",
+      "medicine_name": "Amlodac 2.5 Tablet",
+      "category": "Chronic",
+      "predicted_demand": 82212,
+      "recommended_reorder": 97720,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16442
+    },
+    "forc_med_94173": {
+      "forecast_id": "forc_med_94173",
+      "medicine_id": "med_94173",
+      "medicine_name": "Glycomet 500 SR Tablet",
+      "category": "Chronic",
+      "predicted_demand": 82262,
+      "recommended_reorder": 97860,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16452
+    },
+    "forc_med_94174": {
+      "forecast_id": "forc_med_94174",
+      "medicine_id": "med_94174",
+      "medicine_name": "Glycomet-GP 1 Tablet PR",
+      "category": "Chronic",
+      "predicted_demand": 82262,
+      "recommended_reorder": 98094,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16452
+    },
+    "forc_med_95858": {
+      "forecast_id": "forc_med_95858",
+      "medicine_id": "med_95858",
+      "medicine_name": "Glimceed MF 2mg/500mg Tablet",
+      "category": "Vitamin",
+      "predicted_demand": 83744,
+      "recommended_reorder": 91992,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16748
+    },
+    "forc_med_7471": {
+      "forecast_id": "forc_med_7471",
+      "medicine_id": "med_7471",
+      "medicine_name": "Aceline 200mg Tablet SR",
+      "category": "Vitamin",
+      "predicted_demand": 82177,
+      "recommended_reorder": 90112,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16435
+    },
+    "forc_med_1000": {
+      "forecast_id": "forc_med_1000",
+      "medicine_id": "med_1000",
+      "medicine_name": "Becosules Brand-1 Tablet",
+      "category": "Vitamin",
+      "predicted_demand": 82268,
+      "recommended_reorder": 98101,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16453
+    },
+    "forc_med_2000": {
+      "forecast_id": "forc_med_2000",
+      "medicine_id": "med_2000",
+      "medicine_name": "Becosules Brand-2 Tablet",
+      "category": "Vitamin",
+      "predicted_demand": 82268,
+      "recommended_reorder": 97954,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16453
+    },
+    "forc_med_3": {
+      "forecast_id": "forc_med_3",
+      "medicine_id": "med_3",
+      "medicine_name": "Ascoril LS Syrup",
+      "category": "Cough_Cold",
+      "predicted_demand": 82689,
+      "recommended_reorder": 98257,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16537
+    },
+    "forc_med_10": {
+      "forecast_id": "forc_med_10",
+      "medicine_id": "med_10",
+      "medicine_name": "Ascoril D Plus Syrup Sugar Free",
+      "category": "Cough_Cold",
+      "predicted_demand": 82689,
+      "recommended_reorder": 97753,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16537
+    },
+    "forc_med_98": {
+      "forecast_id": "forc_med_98",
+      "medicine_id": "med_98",
+      "medicine_name": "Alerid Syrup",
+      "category": "Cough_Cold",
+      "predicted_demand": 82689,
+      "recommended_reorder": 98186,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16537
+    },
+    "forc_med_102": {
+      "forecast_id": "forc_med_102",
+      "medicine_id": "med_102",
+      "medicine_name": "Alerid Tablet",
+      "category": "Cough_Cold",
+      "predicted_demand": 89304,
+      "recommended_reorder": 106463,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 17860
+    },
+    "forc_med_33928": {
+      "forecast_id": "forc_med_33928",
+      "medicine_id": "med_33928",
+      "medicine_name": "Calpol 500mg Tablet",
+      "category": "Antipyretic",
+      "predicted_demand": 82177,
+      "recommended_reorder": 97145,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16435
+    },
+    "forc_med_33933": {
+      "forecast_id": "forc_med_33933",
+      "medicine_id": "med_33933",
+      "medicine_name": "Calpol 650mg Tablet",
+      "category": "Antipyretic",
+      "predicted_demand": 82177,
+      "recommended_reorder": 97780,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 16435
+    },
+    "forc_med_25739": {
+      "forecast_id": "forc_med_25739",
+      "medicine_id": "med_25739",
+      "medicine_name": "Brufen 400 Tablet",
+      "category": "Antipyretic",
+      "predicted_demand": 94635,
+      "recommended_reorder": 112539,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 18927
+    },
+    "forc_med_25800": {
+      "forecast_id": "forc_med_25800",
+      "medicine_id": "med_25800",
+      "medicine_name": "Brufen 200 Tablet",
+      "category": "Antipyretic",
+      "predicted_demand": 94635,
+      "recommended_reorder": 112609,
+      "confidence_score": 0.4,
+      "forecast_date": "2026-06-17",
+      "safety_stock": 18927
+    }
+  }
+}

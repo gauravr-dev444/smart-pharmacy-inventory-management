@@ -1,0 +1,25 @@
+# Secrets
+.env
+.env.*
+!.env.example
+**/serviceAccountKey.json
+**/*service-account*.json
+**/*firebase-adminsdk*.json
+**/firebase_credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+
+# Frontend
+node_modules/
+frontend/dist/
+npm-debug.log*
+
+# OS and IDE
+.DS_Store
+.idea/
+.vscode/
